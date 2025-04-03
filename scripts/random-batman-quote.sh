@@ -1,0 +1,1 @@
+/home/edd/.local/bin/random-batman-quote.sh

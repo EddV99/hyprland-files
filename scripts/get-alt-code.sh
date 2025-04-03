@@ -1,0 +1,1 @@
+/home/edd/.local/bin/get-alt-code.sh

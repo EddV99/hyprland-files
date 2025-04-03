@@ -1,0 +1,1 @@
+/home/edd/.local/bin/mp4-to-gif.sh

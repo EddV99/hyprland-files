@@ -1,0 +1,1 @@
+/home/edd/.local/bin/change-audio-device.sh

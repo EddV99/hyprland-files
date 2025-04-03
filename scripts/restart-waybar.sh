@@ -1,1 +1,3 @@
-/home/edd/.local/bin/restart-waybar.sh
+#!/bin/bash
+killall waybar
+waybar &

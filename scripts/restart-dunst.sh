@@ -1,1 +1,3 @@
-/home/edd/.local/bin/restart-dunst.sh
+#!/bin/bash
+killall dunst
+dunst &

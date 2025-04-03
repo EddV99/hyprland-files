@@ -1,1 +1,1 @@
-/home/edd/.local/bin/random-batman-quote.sh
+shuf -n 1 ~/Documents/script-data/batman-quotes.txt

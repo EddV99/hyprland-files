@@ -1,1 +1,32 @@
-/home/edd/.local/bin/unzip-all
+#!/bin/sh
+# Simple script that looks at the extension of a file and unzips accordingly
+
+function usage(){
+    echo "Usage: unzip-all FILE"
+    echo "Supported file types:"
+    echo "   zip"
+    echo "   7z"
+}
+
+if [ -z "$1" ]; then
+    usage
+else
+    # grab the file extension to decide what program to use
+    ext="${1#*.}"
+    case $ext in
+        zip)
+            # we want the name (with no file extension) to name directory to put output files
+            name=$(basename "$1" .zip)
+            unzip $1 -d $name
+            ;;
+          7z)
+            name=$(basename "$1" .7z)
+            7z x -o"${name}" $1
+            ;;
+        *)
+            echo "Unsupported file type"
+            usage
+            ;;
+    esac
+fi
+

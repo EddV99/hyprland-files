@@ -19,10 +19,14 @@ end
 function fish_right_prompt
     echo (set_color de79fc)(fish_vcs_prompt) ' '
 end
-
 # main prompt
 function fish_prompt
-    string join '' -- ' ' (set_color ffc65c) $USER (set_color f5f17a)' in ' (set_color faedcd) (prompt_pwd --full-length-dirs 2) (set_color 7fbbb3)'
+    set -l color_user 5e409d
+    set -l color_in 24837b    
+    set -l color_dir a02f6f
+    set -l color_arrow bc5215
+
+    string join '' -- ' ' (set_color $color_user) $USER (set_color $color_in)' in ' (set_color $color_dir) (prompt_pwd --full-length-dirs 2) (set_color $color_arrow)'
  󱞩 '
 end
 

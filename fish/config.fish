@@ -10,7 +10,7 @@ end
 
 # greeting when opening fish shell
 function fish_greeting
-    random-batman-quote.sh | cowsay -r 
+    ~/.local/bin/random-batman-quote.sh | cowsay -r 
     echo ""
     cal -3
 end
@@ -39,6 +39,7 @@ alias vim "nvim"
 alias ls "ls --color -h --group-directories-first"
 alias t "tmux"
 alias ts "tmuxifier load-session"
+alias tx "tmuxifier"
 alias la "ls -a"
 alias ll "ls -l"
 alias ff "fastfetch"

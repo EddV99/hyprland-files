@@ -35,4 +35,6 @@ This is not an exhaustive list, as I'm sure I'll miss something.
 - foliate
 - evince
 - swww
+- cowsay
 - hyprshot
+- bat

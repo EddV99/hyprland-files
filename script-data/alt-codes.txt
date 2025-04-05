@@ -4962,3 +4962,4 @@
 ©  "copyright sign"
 ®  "trademark sign"
 ≈  "approximate sign"
+—  "long dash"

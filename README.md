@@ -13,6 +13,12 @@ waybar config files should go in `~/.config/waybar/`
 ## fish
 fish config files should go in `~/.config/fish/`
 
+## dunst
+dunst config files should go in `~/.config/dunst/`
+
+## yazi
+yazi config files should go in `~/.config/yazi/`
+
 ## script-data
 script-data files should go in `~/Documents/script-data/`
 
@@ -38,3 +44,4 @@ This is not an exhaustive list, as I'm sure I'll miss something.
 - cowsay
 - hyprshot
 - bat
+- yazi

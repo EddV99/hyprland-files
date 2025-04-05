@@ -1,6 +1,16 @@
 /* @define-color sussy #e8bee7; */
 @define-color sussy #e8ecf4;
 
+@define-color update-color #da702c;
+@define-color volume-color #d14d41;
+@define-color wifi-color #ce5d97;
+@define-color mem-color #8b7ec8;
+@define-color cpu-color #4385be;
+@define-color cpu-temp-color #3aa99f;
+@define-color date-color #879a39;
+@define-color systray-color #d0a215;
+@define-color powertray-color #d14d41;
+
 * {
     border: none;
     border-radius: 3;
@@ -12,7 +22,7 @@
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
-    color: @sussy;
+    color: black;
     font-weight: bold;
     transition-property: background-color;
     transition-duration: .5s;
@@ -67,18 +77,16 @@ button:hover {
 #workspaces button {
     padding: 0 0.4em;
     background-color: transparent;
-    /*color: #888888*/
     color: #ffffff;
 }
 
 #workspaces button.active {
-    background: @sussy;
+    background: #a02f6f;
     box-shadow: inset 0 -1px #000000;
-    color: #000000;
 }
 
 #workspaces button.empty {
-    box-shadow: inset 0 0px #ffffff;
+    box-shadow: inset 0 0px #5E409D;
     color: #ffffff;
 }
 
@@ -141,7 +149,7 @@ button:hover {
 }
 
 #clock {
-    background-color: @sussy;
+    background-color: @date-color;
 }
 
 #battery {
@@ -196,15 +204,15 @@ label:focus {
 }
 
 #cpu {
-    background-color: @sussy;
+    background-color: @cpu-color;
 }
 
 #memory {
-    background-color: @sussy;
+    background-color: @mem-color;
 }
 
 #custom-power {
-    background-color: @sussy;
+    background-color: @powertray-color;
     padding-right: 14px;
 }
 
@@ -217,7 +225,7 @@ label:focus {
 }
 
 #network {
-    background-color: @sussy;
+    background-color: @wifi-color;
 }
 
 #network.disconnected {
@@ -225,7 +233,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: @sussy;
+    background-color: @volume-color;
 }
 
 #pulseaudio.muted {
@@ -257,11 +265,11 @@ label:focus {
 }
 
 #custom-updates {
-    background-color: @sussy;
+    background-color: @update-color;
 }
 
 #temperature {
-    background-color: @sussy;
+    background-color: @cpu-temp-color;
 }
 
 #temperature.critical {
@@ -269,7 +277,7 @@ label:focus {
 }
 
 #tray {
-    background-color: @sussy;
+    background-color: @systray-color;
 }
 
 #tray > .passive {

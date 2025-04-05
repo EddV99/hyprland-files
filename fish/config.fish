@@ -17,8 +17,10 @@ end
 
 # right prompt
 function fish_right_prompt
-    echo (set_color de79fc)(fish_vcs_prompt) ' '
+    set -l color_vsc ad8301
+    echo (set_color $color_vsc)(fish_vcs_prompt) ' '
 end
+
 # main prompt
 function fish_prompt
     set -l color_user 5e409d

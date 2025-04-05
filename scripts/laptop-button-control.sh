@@ -7,7 +7,7 @@ function notifyBrightness() {
   val=$(brightnessctl g)
   max=$(brightnessctl m)
   percentage=$(( (val * 100) / max ))
-  dunstify -r 23 "☀️ Brightness at $percentage% 🌞"
+  dunstify -r 23 -h int:value:$percentage "☀️ Brightness 🌞"
 }
 
 if [ "$choice" == "volume-up" ]; then

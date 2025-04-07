@@ -1,6 +1,7 @@
 /* @define-color sussy #e8bee7; */
 @define-color sussy #e8ecf4;
 
+@define-color sweep-color #d0a215;
 @define-color update-color #da702c;
 @define-color volume-color #d14d41;
 @define-color wifi-color #ce5d97;
@@ -20,7 +21,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
+    background-color: rgba(43, 48, 59, 0.8);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: black;
     font-weight: bold;
@@ -127,6 +128,7 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #custom-power,
+#custom-sweep,
 #mpd {
     padding: 0 10px;
     margin: 6px 3px;
@@ -214,6 +216,10 @@ label:focus {
 #custom-power {
     background-color: @powertray-color;
     padding-right: 14px;
+}
+
+#custom-sweep {
+  background-color: @sweep-color;
 }
 
 #disk {

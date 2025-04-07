@@ -13,9 +13,10 @@
         "custom/media"
     ],
     "modules-center": [
-        "hyprland/window"
+        "hyprland/window",
     ],
     "modules-right": [
+        "custom/sweep",
         "custom/updates",
         "pulseaudio",
         "network",
@@ -211,5 +212,10 @@
         "format" : "  {}",
         "interval" : 60,
         "exec" : "checkupdates | wc -l"
+    },
+    "custom/sweep": {
+        "format" : "{}",
+        "interval" : 15,
+        "exec" : "~/.local/bin/report-ferris-battery.sh"
     }
 }

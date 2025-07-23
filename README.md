@@ -16,6 +16,9 @@ fish config files should go in `~/.config/fish/`
 ## dunst
 dunst config files should go in `~/.config/dunst/`
 
+## tmux
+tmux config files should go in `~/.config/tmux/`
+
 ## yazi
 yazi config files should go in `~/.config/yazi/`
 

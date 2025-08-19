@@ -48,3 +48,17 @@ This is not an exhaustive list, as I'm sure I'll miss something.
 - hyprshot
 - bat
 - yazi
+
+# Help
+
+Sometimes boot stuff gets messed up. Have a usb with an Arch ISO to boot from. Then to fix: 
+1. Mount File Systems 
+    `mount -o compress=zstd,subvol=@ /dev/sda2 /mnt`
+    `mount -o compress=zstd,subvol=@home /dev/sda2 /mnt/home`
+    `mount /dev/sda1 /mnt/efi`
+*Might not be sda, use `lsblk` to check*
+
+2. Use `arch-chroot` on /mnt
+
+3. Remake grub files 
+    `sudo grub-mkconfig -o /boot/grub/grub.cfg` 
